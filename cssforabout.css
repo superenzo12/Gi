@@ -1,0 +1,253 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+/* Style for active menu item */
+.menu a.active {
+    color: black; /* Change text color when active */
+    background-color: #ffcc00; /* Yellow background for active link */
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.8); /* Add a glowing effect */
+    transform: scale(1.1); /* Make the active item slightly larger */
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00; /* Neon Glow */
+}
+
+h1, h2 {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; /* Neon Glow */
+}
+.about{
+    color: #1d1c1b;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; /* Neon Glow */
+}
+/* Navigation Bar */
+.banner {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 150px; /* Updated to match the first version */
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-shadow: 0 0 5px #ffcc00;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    color: black;
+    background-color: #ffcc00;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 40px 20px;
+    background: url(photo/Bar+-+Choosing+Quality+Beers.jpg) center/cover no-repeat;
+    color: #ffcc00;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+/* Story Section */
+.story-section {
+    padding: 40px 20px;
+    background-color: #222;
+}
+
+.story-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+.story-section p {
+    font-size: 18px;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Collaboration Section */
+.collaboration-section {
+    padding: 40px 20px;
+    background-color: #3e2723;
+}
+
+.guinness-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.guinness-image {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+}
+
+.guinness-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.guinness-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Beer & Food Section */
+.beer-food-highlight {
+    padding: 40px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.beer-food-highlight h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+.beer-food-highlight p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Live Band Section */
+.live-band-section {
+    padding: 40px 20px;
+    background-color: #222;
+}
+
+.band-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+}
+
+.live-band-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+.live-band-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Footer */
+.site-footer {
+    background-color: black;
+    color: #ffcc00;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 50px 50px 0 0;
+    box-shadow: 0px -5px 20px rgba(255, 204, 0, 0.8);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    width: 25%;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+.footer-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    font-size: 18px;
+    border-top: 2px solid #ffcc00;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .guinness-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+    }
+}

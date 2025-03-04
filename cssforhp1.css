@@ -1,0 +1,433 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* Style for active menu item */
+.menu a.active {
+    color: black; /* Change text color when active */
+    background-color: #ffcc00; /* Yellow background for active link */
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.8); /* Add a glowing effect */
+    transform: scale(1.1); /* Make the active item slightly larger */
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00; /* Neon Glow */
+}
+
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-height: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.menu li {
+    display: inline;
+    
+}
+
+.banner {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    min-height: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00; /* Neon Glow */
+}
+
+.menu a:hover {
+    color: black;
+    background-color: #ffcc00;
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.8);
+    transform: scale(1.1);
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00; /* Enhanced Neon Glow on Hover */
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 0px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.image-container a {
+    display: block;
+    overflow: hidden;
+    width: 800px;
+    height: 500px;
+    position: relative;
+    margin-top: 60px;
+    border-radius: 100px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00; /* Neon Border Glow */
+}
+
+.image-container a.middle {
+    width: 1000px;
+    height: 650px;
+    margin-top: -10px;
+}
+
+.image-caption-container {
+    display: flex;
+    justify-content: center;
+    gap: 800px;
+    margin-top: 50px;
+}
+
+.image-caption-container-middle {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.image-caption {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 800px;
+    margin-top: -100px;
+}
+
+.image-caption.middle {
+    width: 1000px;
+}
+
+.new-banner-image {
+    width: 100%;
+    height: 250px;
+    display: block;
+    border-radius: 50px;
+    margin-top: 80px;
+}
+
+.video-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.guinness-info {
+    text-align: center;
+    font-size: 40px;
+    color: #ffcc00;
+    background-color: black;
+    background-size: cover;
+    padding: 20px;
+    font-weight: bold;
+    min-height: 100px;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00; /* Neon Glow */
+}
+
+.slideshow-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* Reduced space here */
+}
+
+.slideshow-wrapper {
+    display: flex;
+    animation: slide 15s linear infinite;
+}
+
+.slideshow-wrapper img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    width: 80%;
+}
+
+.image-container a:hover .image-text {
+    opacity: 0;
+    /* This will make the text disappear */
+    transition: opacity 0.3s ease;
+    /* Optional: Smooth transition */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: url('photo/beer-texture.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding: 20px;
+    font-size: 40px;
+    color: #ffcc00;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    animation: marquee 18s linear infinite;
+}
+
+.unplugged-band-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: black;
+    color: #ffcc00;
+    padding: 60px;
+    border-radius: 50px;
+    margin-top: 80px;
+}
+
+.band-image {
+    width: 800px;
+    /* Increased width */
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(255, 204, 0, 1);
+}
+
+.band-info {
+    max-width: 800px;
+    /* Wider text area */
+    text-align: center;
+    /* Centered text */
+    font-size: 30px;
+    /* Bigger text */
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+    line-height: 1.5;
+}
+
+.band-info h2 {
+    font-size: 50px;
+    /* Bigger title */
+    margin-bottom: 20px;
+}
+
+.guinness-announcement {
+    text-align: center;
+    background: url('photo/beer-texture.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 50px;
+    margin-top: 50px;
+    color: #ffcc00;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 20px rgba(255, 204, 0, 1);
+}
+
+.site-footer {
+    background: black;
+    color: #ffcc00;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 50px 50px 0 0;
+    box-shadow: 0px -5px 20px rgba(255, 204, 0, 0.8), 0 0 30px #ffcc00; /* Neon Box Glow */
+    font-family: 'Fredericka the Great', cursive;
+    margin-top: -700px;
+    height: 1000px;
+    /* Added negative margin */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footer-section {
+    width: 25%;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.social-link {
+    color: #ffcc00;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 18px;
+    border-top: 2px solid #ffcc00;
+    padding-top: 20px;
+}
+
+.footer-thank-you {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-top: 10px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 900px) {
+    .menu {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .image-container {
+        flex-direction: column;
+    }
+
+    .image-caption-container {
+        flex-direction: column;
+    }
+
+    .image-caption {
+        font-size: 14px;
+    }
+
+    .new-banner-image {
+        height: 150px;
+    }
+
+    .video-banner video {
+        height: 250px;
+    }
+
+    .guinness-info {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .slideshow-wrapper img {
+        height: 100%;
+    }
+}

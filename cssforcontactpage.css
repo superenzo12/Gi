@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+}
+
+/* Banner */
+.banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    min-height: 20px;
+}
+/* Style for active menu item */
+.menu a.active {
+    color: black; /* Change text color when active */
+    background-color: #ffcc00; /* Yellow background for active link */
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.8); /* Add a glowing effect */
+    transform: scale(1.1); /* Make the active item slightly larger */
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00; /* Neon Glow */
+}
+
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00; /* Neon Glow */
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    color: black;
+    background-color: #ffcc00;
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.8);
+    transform: scale(1.1);
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00; /* Enhanced Neon Glow on Hover */
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #ffcc00;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #444;
+    color: white;
+}
+
+.contact-form button {
+    background-color: #ffcc00;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #f39c12;
+    transform: scale(1.05);
+}
+
+/* Contact Info */
+.contact-info {
+    width: 45%;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+.contact-info a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    color: #f39c12;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #222;
+    color: #ffcc00;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    box-shadow: 0px -5px 20px rgba(255, 204, 0, 0.8);
+}
+
+/* Additional Styles for Neon Glow and Branding */
+.guinness-info {
+    text-align: center;
+    font-size: 40px;
+    color: #ffcc00;
+    background-color: black;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00; /* Neon Glow */
+}
+
+/* Slideshow */
+.slideshow-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.slideshow-wrapper {
+    display: flex;
+    animation: slide 15s linear infinite;
+}
+
+.slideshow-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .menu {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+
+    .guinness-info {
+        font-size: 24px;
+        padding: 15px;
+    }
+}
